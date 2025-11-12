@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイルマップ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js"></script>
+
+    <!-- フォント -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <input type="text" class="search-box" placeholder="検索...">
+    <div class="controls">
+        <p>矢印キーまたはWASDで移動</p>
+    </div>
+
+    <div class="infinite-canvas" id="canvas">
+        
+
+
+        <div class="tile type_logo" >
+            <div class="title">ねこしる！</div>
+            <img src="img/top猫.png" alt="猫の視覚" class="top-img">
+        </div>
+
+        <div class="tile type-ex" >
+            <div class="tile-title">ねこしるって？</div>
+            <div class="tile-desc">ねこはどんなふうに生きているんだろう？<br>見ているもの、感じていることも<br>私たちと全く別かもしれない。<br>ねこを知り、ねこの生きる世界を見てみよう！</div>
+        </div>
+
+
+
+
+        <div class="tile type-0" 
+             data-link-type="modal">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title"><span class="title1">猫の錯覚</span></div>
+            <div class="tile-desc"><span class="desc1">実はこう見えてる！？</span></div>
+        </div>
+
+
+        <div class="comment_box">
+            <p>スクロールして<br>テキストテキストテキストテキストテキス</p>
+        </div>
+        
+
+        <div class="tile type-1" 
+             data-link-type="modal">
+             <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">1</div>
+            <div class="tile-desc">美味しいグルメが集結</div>
+        </div>
+
+        <div class="tile type-shopping" data-link-type="modal">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">2</div>
+            <div class="tile-desc">トレンドアイテム</div>
+        </div>
+        
+
+        <div class="tile type-3" 
+             data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">3</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-4" 
+             data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">4</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+
+        <div class="tile type-5" data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">5</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-6" 
+             data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">6</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+        
+        <div class="tile type-7" 
+             data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">7</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-8" 
+             data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-icon">⚙️</div>
+            <div class="tile-title">8</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-9" 
+             data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">9</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-10" 
+             data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-icon">⚙️</div>
+            <div class="tile-title">10</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+         <div class="tile type-11" 
+             data-link-type="external"
+            data-url="https://www.example.com">
+            <img src="img/インタビュー文字.png" alt="猫の視覚" class="int_tile_image">
+            <img src="img/ものづくり_文字.png" alt="猫の視覚" class="int_tile_image2">
+            <img src="img/nekozuki_top.jpg" alt="猫の視覚" class="int_tile_image3">
+            <div class="tile-title">11</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+        
+        <div class="tile type-12" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-12.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">12</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-13" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-13.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">13</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-14" 
+            data-link-type="external"
+            data-url="https://www.interview/index.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">14</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-15" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-15.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">15</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+        
+        <div class="tile type-16" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-16.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">16</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-17" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-17.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">17</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-18" 
+            data-link-type="external"
+            ata-url="https://www.example.com/file-18.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">18</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-19" 
+             data-link-type="external"
+            data-url="https://www.example.com/file-19.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">19</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-20" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-20.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">20</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+
+        <div class="tile type-21" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-21.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">21</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-22" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-22.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">22</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+        
+        <div class="tile type-23" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-23.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">23</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-24" 
+             data-link-type="external"
+            data-url="https://www.example.com/file-24.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">24</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-25" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-25.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">25</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-26" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-26.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">26</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-27" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-27.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">27</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-28" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-28.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">28</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-29" 
+            data-link-type="external"
+            data-url="https://www.example.com/file-29.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">29</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+
+        <div class="tile type-30" 
+             data-link-type="external"
+            data-url="https://www.example.com/file-30.html">
+            <img src="img/catvision.png" alt="猫の視覚" class="tile-image">
+            <div class="tile-title">30</div>
+            <div class="tile-desc">テキスト</div>
+        </div>
+        </div>
+
+
+    <div class="minimap">
+        <div class="minimap-content" id="minimapContent"></div>
+    </div>
+    
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modalContent">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+</body>
+</html>
