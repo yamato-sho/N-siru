@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>漫画風スクロール_ルール</title>
+    <title>漫画風スクロール_時間の認識</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../reset.css">
     <script src="script.js"></script>
@@ -13,32 +13,36 @@
     <div class="manga-container">
 
 
-                <div class="panel-row">
+        <!-- 1コマ (アスペクト比 8:3) -->
+        <div class="panel-row">
             <div class="panel panel-single" style="--aspect-ratio: 37.5%;">
-                                <div class="panel-content">
-                    <div class="text-box text-box-top-right">
-                       においと
-                    </div>
-                    <div class="text-box text-box-top-left">
-                       口に入れたときの味や<br>食感によって決まるのかもしれません。
-                    </div>
-                    </div>
+                <div class="panel-content panel1">
+                    <img src="img/oisii_topcat.png" alt="時間" class="panel_img1">
+                    <img src="../img/おいしいって？.png" alt="おいしいってなんだろうの猫" class="panel_img2">
+                    <img src="img/back_img.jpg" alt="食べ物背景" class="panel_img3">
+                </div>
             </div>
         </div>
+
+
+
+
 
                 <!-- 2コマ横並び (アスペクト比 4:3.5) -->
         <div class="panel-row">
             <div class="panel panel-double" style="--aspect-ratio: 67.5%;">
                 <div class="panel-content">
+                    <img src="img/t1.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                        ねこは音にとても敏感
+                   暗くなると、1日の終わりを感じたりします。
                     </div>
                 </div>
             </div>
             <div class="panel panel-double" style="--aspect-ratio: 67.5%;">
                 <div class="panel-content">
+                    <img src="img/t2.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                        そして音はどうでしょう
+                        私たち人間は、朝の光で一日の始まりを感じたり、
                     </div>
                 </div>
             </div>
@@ -48,11 +52,12 @@
         <div class="panel-row">
             <div class="panel" style="width: 90%; max-width: 600px; --aspect-ratio: 47%;">
                 <div class="panel-content">
+                    <img src="img/t3.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                       もしかすると、猫にとって匂いは
+                        また、体の中にも「体内時計」があり、
                     </div>
                     <div class="text-box text-box-top-left">
-                         おいしいと感じる要素になるかもしれません
+                        食事や睡眠のリズムをある程度は自分の感覚でつかんでいます。
                     </div>
                     </div>
             </div>
@@ -62,15 +67,17 @@
         <div class="panel-row">
             <div class="panel" style="width: 50%; max-width: 500px; --aspect-ratio: 67.5%;">
                 <div class="panel-content">
+                    <img src="img/t5.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                        ねこは人よりも鼻がいいのです
+                        「7時に起きる」「12時にお昼を食べる」
                     </div>
                 </div>
             </div>
             <div class="panel" style="width: 30%; max-width: 300px; --aspect-ratio: 67.5%;">
                 <div class="panel-content">
+                    <img src="img/t4.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                        あまさは感じません
+                        けれど、それでも私たちは最終的に時計を見て行動します。
                     </div>
                 </div>
             </div>
@@ -80,36 +87,28 @@
         <div class="panel-row">
             <div class="panel" style="width: 90%; max-width: 600px; --aspect-ratio: 47%;">
                 <div class="panel-content">
+                    <img src="img/t6.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                       もしかすると、猫にとって匂いは
+                        時間は数字で区切られ人と同じリズムで動くための
                     </div>
                     <div class="text-box text-box-top-left">
-                         おいしいと感じる要素になるかもしれません
+                    共通の目印になっています。  
                     </div>
                     </div>
             </div>
         </div>
 
-                <!-- １コマ右寄り -->
-        <div class="panel-row right">
-          <div class="panel" style="width: 60%; max-width: 500px; --aspect-ratio: 47%;">
-            <div class="panel-content">
-               <div class="text-box text-box-top-right">
-                  右寄りのコマです。
-                </div>
-            </div>
-         </div>
-        </div>
 
                 <!-- 1コマ (アスペクト比 6:2.8 ≈ 2.14:1) -->
         <div class="panel-row">
             <div class="panel" style="width: 90%; max-width: 600px; --aspect-ratio: 47%;">
                 <div class="panel-content">
+                    <img src="img/t7.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                       もしかすると、猫にとって匂いは
+                        しかし、時計のないねこは光・温度・音・匂いといったまわりの環境から
                     </div>
                     <div class="text-box text-box-top-left">
-                         おいしいと感じる要素になるかもしれません
+                        時間を感じ取っているのです。
                     </div>
                     </div>
             </div>
@@ -119,19 +118,26 @@
         <div class="panel-row right">
           <div class="panel" style="width: 60%; max-width: 500px; --aspect-ratio: 47%;">
             <div class="panel-content">
+                <img src="img/t8.png" alt="鏡の中は誰かわかる？" class="">
                <div class="text-box text-box-top-right">
-                  右寄りのコマです。
+                たとえば、人と同じように明るさの変化から自然に時間読み取っています。
                 </div>
             </div>
          </div>
         </div>
+
+
 
           	<!-- １コマ左寄り -->
         <div class="panel-row left">
           <div class="panel" style="width: 60%; max-width: 500px; --aspect-ratio: 47%;">
             <div class="panel-content">
+                <img src="img/t9.png" alt="鏡の中は誰かわかる？" class="">
                <div class="text-box text-box-top-right">
-                  左寄りのコマです。
+                また、皮膚や鼻がわずかな温度の違いを感じ取り、
+                </div>
+                <div class="text-box text-box-top-left">
+                時間や季節の違いもわかるようです。
                 </div>
             </div>
          </div>
@@ -141,8 +147,9 @@
         <div class="panel-row right">
           <div class="panel" style="width: 60%; max-width: 500px; --aspect-ratio: 47%;">
             <div class="panel-content">
+                <img src="img/t10.png" alt="鏡の中は誰かわかる？" class="">
                <div class="text-box text-box-top-right">
-                  右寄りのコマです。
+                家ねこの場合だと、飼い主の生活パターンを覚えてご飯の時間がわかったりもします。
                 </div>
             </div>
          </div>
@@ -152,25 +159,24 @@
         <div class="panel-row">
             <div class="panel" style="width: 90%; max-width: 600px; --aspect-ratio: 47%;">
                 <div class="panel-content">
+                    <img src="img/t11.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                       もしかすると、猫にとって匂いは
+                        このように、ねこはその日の光・音・空気・匂いがつくる環境のリズムの中で動いているようです。
                     </div>
-                    <div class="text-box text-box-top-left">
-                         おいしいと感じる要素になるかもしれません
-                    </div>
-                    </div>
+                </div>
             </div>
         </div>
 
                 <!-- 1コマ (アスペクト比 8:3) -->
         <div class="panel-row">
             <div class="panel panel-single" style="--aspect-ratio: 37.5%;">
-                                <div class="panel-content">
+                    <div class="panel-content">
+                        <img src="img/t12.png" alt="鏡の中は誰かわかる？" class="">
                     <div class="text-box text-box-top-right">
-                       においと
+                        数字で決められた時間ではない、
                     </div>
                     <div class="text-box text-box-top-left">
-                       口に入れたときの味や<br>食感によって決まるのかもしれません。
+                        時計がある前の自然な時間の流れをねこは持っているのかもしれません。
                     </div>
                     </div>
             </div>
