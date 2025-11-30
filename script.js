@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const info = getTileInfo(tile);
             
             if (info.linkType === 'external' && info.url) {
-                window.open(info.url, );
+              //  window.open(info.url, );
+                window.location.href = info.url;
             } else {
                 showModal(info);
             }
