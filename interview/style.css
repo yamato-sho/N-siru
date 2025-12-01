@@ -76,7 +76,7 @@
         }
 
         .hero-title {
-            /* font-size: 42px; */
+            font-size: 1.8rem;
             /* font-weight: 500; */
             /* line-height: 1.6; */
             margin-bottom: 30px;
@@ -88,15 +88,17 @@
             font-size: 16px;
             font-weight: 300;
             max-width: 650px;
-            margin: 0 auto;
+            margin: 24px auto;
             color: #6a5a4a;
             line-height: 2;
+            margin-bottom: 32px;
+            text-align:left
         }
 
         /* 目次セクション */
         .table-of-contents {
             background: #fff;
-            padding: 80px 20px;
+            padding: 40px 20px;
             border-top: 1px solid #e8e2d8;
         }
 
@@ -109,16 +111,19 @@
             font-size: 24px;
             font-weight: 500;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             color: #7a6a5a;
             letter-spacing: 2px;
         }
 
         .toc-list {
             background: #fafaf8;
-            padding: 40px 50px;
+            padding: 10px 50px;
             border-radius: 6px;
             border: 1px solid #e8e2d8;
+            width: 60%;
+            margin: 0 auto;
+            
         }
 
         .toc-item {
@@ -211,6 +216,11 @@
             font-size: 15px;
             border: 1px solid #e8e2d8;
         }
+        .a-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
 
         .quote-box {
             background: #fff;
@@ -240,13 +250,27 @@
         }
         .article-text-Q{
             font-weight:500;
+            margin-bottom: 15px;
+        }
+
+        .QA{
+            margin: 36px;
         }
 
         /* プロフィールセクション */
+        tile-image{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover; 
+
+
+        }
         .profile-section {
             background: #f4ebe0;
-            padding: 80px 20px;
+            padding: 40px 48px;
             border-top: 1px solid #e8e2d8;
+            margin: 4% 0;
         }
 
         .profile-container {
@@ -307,6 +331,34 @@
             color: #5a4a4a;
         }
 
+        .profile-company-0{
+            font-size: 16px;
+            font-weight: 500;
+            color: #6a5a4a;
+
+        }
+    
+    
+        /* 画像 */
+        /* style.css の末尾など、どこかに追加してください */
+
+    .profile-image .tile-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        object-position: center;
+    
+}
+
+    .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            overflow: hidden; 
+            line-height: 0; 
+            background: transparent; 
+        }
         /* セパレーター */
         .separator {
             width: 60px;
