@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 初期位置を中央
 window.addEventListener('load', function() {
-    window.scrollTo(1500, 1600); 
+    window.scrollTo(900, 1200); 
 
     // ミニマップの更新処理
     updateMinimap(); 
