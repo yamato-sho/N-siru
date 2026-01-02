@@ -285,13 +285,13 @@
         .profile-image {
             width: 180px;
             height: 180px;
-            background: #e8e2d8;
+            /* background: #e8e2d8; */
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 13px;
-            color: #8b7a6a;
+            /* color: #8b7a6a; */
             border: 3px solid #fff;
         }
 

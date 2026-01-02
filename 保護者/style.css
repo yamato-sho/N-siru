@@ -1,0 +1,282 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Zen Maru Gothic', sans-serif;
+      background-color: #F6F2EE;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #219DDD;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    h3{
+      font-size: 1em;
+      color: #ffffff;
+    }
+    h4{
+      font-size:  1em;
+      color: #ffffff;
+      margin-bottom: 1em;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    .menu-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    .about-content {
+      border-radius: 1rem;
+      padding: 0rem 2rem 2rem 2rem;
+    }
+
+    .about-content p {
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .article-card {
+      display: block;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .article-card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      transform: translateY(-4px);
+      border-color: #54bdf1;
+      
+    }
+
+    .article-image {
+      height: 16rem;
+      /* display: flex; */
+      align-items: center;
+      justify-content: center;
+      /* height: 16rem; 高さを固定 */
+  /* width: 100%;   横幅をいっぱいにする */
+  overflow: hidden; /* はみ出た分を隠す */
+  position: relative;
+
+    }
+
+    .article-image-placeholder {
+      text-align: center;
+      color: #333;
+    }
+
+    
+    .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: bottom;
+}
+
+
+    .article-content {
+      padding: 1.5rem;
+      background-color: white;
+      /* z-index: 10; */
+    }
+
+    .article-content h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .article-content p {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .article-link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .related-card {
+      display: block;
+      background-color: white;
+      border-radius: 0.75rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .related-card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      transform: translateY(-4px);
+      /* border-color: #54bdf1; */
+    }
+
+    .related-card-header {
+      background-color: #ffffff;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .related-card-header h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .related-card-image {
+      height: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .related-card-body {
+      padding: 1rem;
+    }
+
+    .related-card-body p {
+      font-size: 0.875rem;
+      color: #555;
+      margin-bottom: 0.75rem;
+      min-height: 3rem;
+    }
+
+    .related-card-button {
+      width: 100%;
+      background-color: #219DDD;
+      color: white;
+      padding: 0.5rem;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      transition: background-color 0.3s;
+      border: none;
+    }
+
+    .related-card:hover .related-card-button {
+      background-color: #54bdf1;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+
+    
+      
+    }
+
+    footer {
+      background-color: #219DDD;
+      border-top: 4px solid #219DDD;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      margin-top: 4rem;
+      width: 100%;
+    }
+
+    footer h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    footer p {
+      font-size: 0.875rem;
+      color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .header-left {
+        gap: 1rem;
+      }
+
+      nav {
+        display: none;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .article-image {
+        height: 12rem;
+      }
+
+      .related-grid {
+        gap: 0.75rem;
+      }
+    }
